@@ -1,7 +1,7 @@
 # FarmFuturist
  FarmFuturist is a website which aims to provide specialized solutions for Kentucky farmers, particularly those in the Highland Heights area. The website includes several sections such as Home, Product, News, Blogs, About, and Contact.
 
-Abstract
+Abstract: 
 This report presents a comprehensive analysis of a responsive website named FarmFuturist. The website is built using HTML, CSS, and JavaScript. It highlights FarmFuturist’s products and services while maintaining a visually appealing and user-friendly design. The website's layout, components, and functionality are specifically tailored to ensure a seamless browsing experience across various devices and platforms.
 
 Website Structure:
@@ -56,7 +56,7 @@ Social Media Subscription form:
 
 This section contains links to different parts of the website, social media links, and a subscription form.
 
-Conclusion:
+Conclusion: 
 The website’s design principles, such as whitespace and minimalism, and consistent color scheme and typography, create a cohesive design that enhances user experience. The website features a navigation menu that allows user to move between different sections, and its integration of responsive design principles and cross-browser compatibility ensures that we can access the website from any device or platform. 
 
 
