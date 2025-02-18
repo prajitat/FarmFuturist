@@ -58,8 +58,7 @@ This section contains links to different parts of the website, social media link
 
 Conclusion
 
-The website’s design principles, such as whitespace and minimalism, and consistent color scheme and typography, create a cohesive design that enhances user experience. The website features a navigation menu that allows user to move between different sections, and its integration of responsive design principles and cross-browser compatibility ensures that we can access the website from any device or platform. ![image](https://github.com/user-attachments/assets/252df2ab-6613-4592-8841-0830e0a596ed)
-
+The website’s design principles, such as whitespace and minimalism, and consistent color scheme and typography, create a cohesive design that enhances user experience. The website features a navigation menu that allows user to move between different sections, and its integration of responsive design principles and cross-browser compatibility ensures that we can access the website from any device or platform. 
 
 
 
