@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Lato:400,700|Raleway:300,400,500,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+	<title>Blog Page</title>
+	<style>
+
+		.container {
+			max-width: 100%;
+			margin: 0 auto;
+			padding: 20px;
+            display: grid;
+            grid-template-columns: auto auto;
+            column-gap: 1rem;
+		}
+		.article {
+			margin-bottom: 20px;
+			padding: 10px;
+            background-color: rgba(255, 255, 255, 0.594);
+			box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+			border-radius: 5px;
+			overflow: hidden;
+		}
+		.article img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+			object-fit: cover;
+			object-position: center;
+		}
+		.article h2 {
+			font-size: 28px;
+			margin: 10px 0;
+		}
+		.article p {
+			font-size: 16px;
+			margin: 10px 0;
+		}
+		.article a {
+			display: inline-block;
+			font-size: 14px;
+			padding: 5px 10px;
+			background-color: #007bff;
+			color: #fff;
+			border-radius: 3px;
+			text-decoration: none;
+			transition: background-color 0.2s;
+		}
+		.article a:hover {
+			background-color: #0062cc;
+		}
+	</style>
+</head>
+<body>
+    <header>
+
+
+        <nav
+            class="navbar">
+
+           
+
+            <div class="logo">
+                <h1>
+                    <i class="fas fa-chart-line"></i>FarmFuturist</h1>
+            </div>
+
+          
+
+            <ul
+                class="nav-links">
+
+               
+
+                <input type="checkbox" id="checkbox_toggle"/>
+
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+               
+
+                <div class="menu">
+
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#product">Product</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+
+                  
+
+                    <li>
+                        <a href="/news.html">News</a>
+                    </li>
+
+                    <li>
+                        <a href="#blogs">Blogs</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+
+                </div>
+
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <h2 class="heading2">Latest News </h2>
+        <div class="container"></div>
+        <script>
+            const container = document.querySelector('.container');
+            const url = 'https://newsapi.org/v2/everything?q=tesla&from=2023-04-02&sortBy=publishedAt&apiKey=606ee1c3a7f341c4988abec6f4eb5dff';
+            fetch(url)
+                .then(res => res.json())
+                .then(data => {
+                    const articles = data.articles;
+                    articles.forEach(article => {
+                        const div = document.createElement('div');
+                        div.classList.add('article');
+                        div.innerHTML = `
+                            <img src="${article.urlToImage}" alt="${article.title}">
+                            <h2>${article.title}</h2>
+                            <p>${article.description}</p>
+                            <a href="${article.url}" target="_blank">Read More</a>
+                        `;
+                        container.appendChild(div);
+                    });
+                })
+                .catch(error => console.error(error));
+        </script>
+    </main>
+    <footer>
+        <p>&copy; Sujal, Anushka, Sanjog, Prajita, All Rights Reserved</p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#product">Product</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+              
+
+                <li>
+                    <a href="/news.html">News</a>
+                </li>
+
+                <li>
+                    <a href="#blogs">Blogs</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <p>Follow us on social media:</p>
+            <ul class="social-media">
+                <li>
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+
+            <div class="subscribe-container">
+                <p>Subscribe to our newsletter:</p>
+                <input type="email" placeholder="Enter your email address">
+                <button class="subscribe">Subscribe</button>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>

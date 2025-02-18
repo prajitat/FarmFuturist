@@ -1,0 +1,274 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FarmFuturist</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Lato:400,700|Raleway:300,400,500,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="index.css">
+
+    </head>
+    <body>
+
+
+        <header>
+
+
+            <nav
+                class="navbar">
+
+                
+
+                <div class="logo">
+                    <h1>
+                        <i class="fas fa-chart-line"></i>FarmFuturist</h1>
+                </div>
+
+                
+
+                <ul
+                    class="nav-links">
+
+                   
+
+                    <input type="checkbox" id="checkbox_toggle"/>
+
+                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                    
+
+                    <div class="menu">
+
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="#product">Product</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+
+                      
+
+                        <li>
+                            <a href="news.html">News</a>
+                        </li>
+
+                        <li>
+                            <a href="#blogs">Blogs</a>
+                        </li>
+
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+
+                    </div>
+
+                </ul>
+
+            </nav>
+        </header>
+
+
+        <main class ="main">
+            <section>
+                <div class="intro-section">
+                    <div class="intro-text">
+                        <p class="captitle">Experience the future of
+                        </p>
+                        <p class="captitle-bold">Agriculture in Kentucky</p>
+                        <div class="button-container">
+                            <button class="btn-white"><a href ="signup-login.html">Signup</a></button>
+                            <button class="btn-transparent"><a href ="signup-login.html">Sign in</a></button>
+                        </div>
+                    </div>
+                    <div class="intro-image">
+                        <img src="assets/intro-img.png" alt="Image description">
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+            <section id ="product">
+                <h2 class="heading2">Our Product</h2>
+                <div class="product-section">
+
+
+                    <div class="product-image">
+                        <img src="assets/product_img.jpeg" alt="Product Image">
+                    </div>
+                    <div class="product-description">
+                        <h2>AgriTechPro</h2>
+                        <p>Many farmers in Kentucky, particularly in the Highland Heights region, still grow their plants, seeds, and crops without the aid of technology or the right understanding of the soil. They only raise the crops in accordance with their needs. AgriTechPro was created with the goal of using the extraordinary amount of data currently accessible to discover the best sustainable farming method for the future, tailored to the unique conditions of Kentucky and Highland Heights.</p>
+                    </div>
+                </div>
+            </section>
+            <br/>
+            <section id = "blogs">
+                <h2 class="heading2">Learn Farming from Industry Experts</h2>
+                <div class="blockquote-wrapper">
+                    <div class="blockquote">
+                      <p>
+                        We believe the <span style="color:#ffffff">knowledge of agriculture</span> should be accessible to every farmers, especially those in Kentucky and Highland Heights. We are here to help you<span style="color:#ffffff"> in this journey.</span>
+                      </p>
+                    </div>
+                  </div>
+                <div id="news-container">
+                    <div class="news-item">
+                        <a href="blog-article1.html">
+                            <img src="assets/bg-1.png" alt="News 1">
+                            <h3>Sustainable Agriculture: The Future of Highland Heights Farming</h3>
+                            <p></p>
+                        </a>Sustainable agriculture is the future of farming in Highland Heights,...
+                    </div>
+                    <div class="news-item">
+                        <a href="blog-article2.html">
+                            <img src="assets/bg-2.png" alt="News 2">
+                            <h3>Innovative Farming Technologies: Keeping Up with the Latest Advances in Agriculture</h3>
+                            <p>As the world's population continues to grow, the demand for food production increases...</p>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="blog-article3.html">
+                            <img src="assets/bg-3.png" alt="News 3">
+                            <h3>Farming in Off-Season: Making the Most of Your Downtime</h3>
+                            <p>For many farmers, the offseason can be a time of rest and relaxation after a long growing season...</p>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="blog-article4.html">
+                            <img src="assets/bg-4.png" alt="News 4">
+                            <h3>Sustainable Farming: The Importance of Regenerative Agriculture</h3>
+                            <p>Sustainable agriculture is an approach to farming that aims to meet the needs of the present without... </p>
+                        </a>
+                    </div>
+                    <div class="news-item">
+                        <a href="blog-article5.html">
+                            <img src="assets/bg-5.png" alt="News 5">
+                            <h3>Understanding Organic Farming: Benefits and Practices</h3>
+                            <p>Organic farming is a farming method that uses natural inputs and avoids synthetic chemicals to produce crops and livestock...</p>
+                        </a>
+                    </div>
+            
+
+                </div>
+                <button id="load-more-btn" onclick="loadMoreNews()">Load More</button>
+
+            </section>
+
+
+            <section id ="about" class="about-section">
+                <h2 class="heading2">About Us</h2>
+                <p>
+                    FarmFuturist is a technology-driven company that aims to revolutionize farming methodologies by integrating cutting-edge hardware and software technology. We focus on providing specialized solutions for Kentucky farmers, particularly those in the Highland Heights area. Our initiative, AgriTechPro, uses detailed live data on the temperature, moisture content, and soil nutrition. This project consists of two parts: a farmer component and an expert portion. The farmer first gets onto the website, searches for the soil/land specialist, and then simply schedules an appointment with the chosen expert. And when the expert visits the farmer's field, he or she also carries a gadget that measures the soil's temperature, pressure, and moisture content and its percentage. Using all of these factors, the expert may easily forecast which crops would thrive on a specific soil type, taking into consideration the unique conditions and challenges faced by Kentucky farmers, particularly in the Highland Heights region. The farmer will benefit from this by minimizing losses and growing the right crops in an efficient manner.
+                    <div class="values-container">
+                        <div class="value-card">
+                            <h3>Why choose us?</h3>
+                            <p>We understand the unique challenges faced by Kentucky farmers, especially those in Highland Heights. Our expertise in local soil conditions, climate, and farming practices sets us apart from other agri-tech companies. By leveraging advanced technology and data-driven insights, we help farmers make informed decisions about their land, crops, and resources. Our commitment to sustainability and the wellbeing of the local farming community ensures that our solutions are environmentally friendly and economically viable.</p>
+                        </div>
+                        <div class="aim-card">
+                            <h3>What we want to achieve?</h3>
+                            <p>Our goal is to empower Kentucky farmers, particularly those in the Highland Heights region, by providing them with cutting-edge tools and resources to enhance their agricultural productivity, efficiency, and sustainability. We strive to create a robust support network for the local farming community by connecting them with experts, offering valuable insights, and fostering knowledge-sharing. By harnessing the power of technology and local expertise, we aim to build a resilient, prosperous, and environmentally responsible agricultural sector in the region.</p>
+                        </div>
+                    </div>
+                </p>
+            </section>
+
+
+            <section id ="contact">
+                <h2 class="heading2">Contact Us</h2>
+                <form id="contact-form" class="login_card">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+
+        </main>
+        <footer class ="footer">
+            <p>&copy; FarmFuturist, All Rights Reserved</p>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#product">Product</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+
+                  
+
+                    <li>
+                        <a href="/news.html">News</a>
+                    </li>
+
+                    <li>
+                        <a href="#blogs">Blogs</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <p>Follow us on social media:</p>
+                <ul class="social-media">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+
+                <div class="subscribe-container">
+                    <p>Subscribe to our newsletter:</p>
+                    <input type="email" placeholder="Enter your email address">
+                    <button class="subscribe">Subscribe</button>
+                </div>
+            </div>
+        </footer>
+
+      <script src="script.js"></script>
+
+    </body>
+
+</html>
